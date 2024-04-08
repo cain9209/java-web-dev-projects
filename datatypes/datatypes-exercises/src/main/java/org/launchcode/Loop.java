@@ -1,16 +1,18 @@
 package org.launchcode;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Loop {
-public static void main(String[]agrs){
-    int nums[]={1111,111111,111111,222222,11111};
+    public static void main(String[] args) {
 
-    for(int i :nums){
-        System.out.println(i);
-        if( i == 222222){
-            System.out.println("hooray");
-        } else {
-            System.out.println("Depression");
-        }
+        Car myCar = new Car();
+
+//        System.out.println(myCar.make);
+//        System.out.println(myCar.model);
+        myCar.brake();
+      }
     }
-}
-}
+
+
+
+

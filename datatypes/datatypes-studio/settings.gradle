@@ -1,2 +1,3 @@
 rootProject.name = 'datatypes-studio'
+include 'counting-characters'
 
