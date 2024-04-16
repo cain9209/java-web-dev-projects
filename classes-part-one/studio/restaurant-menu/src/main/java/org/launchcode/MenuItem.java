@@ -1,15 +1,14 @@
 package org.launchcode;
-import java.util.Date;
 import java.util.HashMap;
+// LocalDate 	Represents a date (year, month, day (yyyy-MM-dd))
 
 public  class MenuItem {
 
- private    double price;
+ private double price;
  private String description;
  private String category;
- private boolean isNew;
+ private static boolean isNew;
  private String name;
- private Date dateAdded;
 
     public double getPrice() {
         return price;
@@ -51,22 +50,25 @@ public  class MenuItem {
         this.name = name;
     }
 
-    public Date getDateAdded() {
-        return dateAdded;
-    }
 
-    public void setDateAdded(Date dateAdded) {
-        this.dateAdded = dateAdded;
+    @Override
+    public String toString() {
+        return "MenuItem{" +
+                "price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                ", isNew=" + isNew +
+                ", name='" + name + '\'' +
+                '}';
     }
 
     public MenuItem(double price, String description,
-                    String category, boolean isNew, String name, Date dateAdded) {
+                    String category, boolean isNew, String name) {
         this.price = price;
         this.description = description;
         this.category = category;
         this.isNew = isNew;
         this.name = name;
-        this.dateAdded = dateAdded;
 
 
 

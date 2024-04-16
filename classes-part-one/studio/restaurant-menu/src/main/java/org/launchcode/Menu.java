@@ -1,14 +1,26 @@
 package org.launchcode;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 // added static to access fields outside of this class, we can leave the setter methods due to not needing to use Final //
 public class Menu {
 
     ArrayList<MenuItem> menuItems = new ArrayList<>();
-  private  Date lastUpdated;
   private String restaurantName;
   private String restaurantDescription;
+    // string builder //
+    public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+    }
+
+
+    public Menu() {
+
+    }
+
+    public  String addItem(MenuItem menuSteak) {
+        return addItem(menuSteak);
+    }
 
     public void addMenuItem(MenuItem newItem) {
         menuItems.add(newItem);
@@ -24,14 +36,6 @@ public class Menu {
 
     public void setMenuItems(ArrayList<MenuItem> menuItems) {
         this.menuItems = menuItems;
-    }
-
-    public Date getLastUpdated() {
-        return lastUpdated;
-    }
-
-    public void setLastUpdated(Date lastUpdated) {
-        this.lastUpdated = lastUpdated;
     }
 
     public String getRestaurantName() {
@@ -50,15 +54,22 @@ public class Menu {
         this.restaurantDescription = restaurantDescription;
     }
 
-    public Menu(ArrayList<MenuItem> menuItems, Date lastUpdated,
+
+    public Menu(ArrayList<MenuItem> menuItems, LocalDate lastUpdated,
                 String restaurantName, String restaurantDescription) {
         this.menuItems = menuItems;
-        this.lastUpdated = lastUpdated;
         this.restaurantName = restaurantName;
         this.restaurantDescription = restaurantDescription;
 
 
-
-
     }
-}
+
+
+
+
+        }
+
+
+
+
+
