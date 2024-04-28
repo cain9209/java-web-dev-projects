@@ -1,4 +1,4 @@
-public class Cat {
+public class Cat{
 
     private boolean tired = false;
     private boolean hungry = false;

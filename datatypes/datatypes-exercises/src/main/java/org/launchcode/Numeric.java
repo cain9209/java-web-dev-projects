@@ -19,3 +19,4 @@ public class Numeric {
         System.out.println("The Area of the Rectangle is: " + recArea + "Ft.");
     }
 }
+

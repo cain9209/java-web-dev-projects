@@ -3,8 +3,9 @@ public class HouseCat extends Cat {
     private String species = "Felis catus";
 
     public HouseCat(String aName, double aWeight) {
-        super(aWeight);
+        super(aWeight); // pulls in the constructor from the parent class //
         name = aName;
+
     }
 
     public boolean isSatisfied() {
