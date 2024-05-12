@@ -6,7 +6,7 @@ public class Cat{
 
     // The biological family for all cat species
     private String family = "Felidae";
-
+// need to do research on this method //
     public Cat (double aWeight) {
         weight = aWeight;
     }

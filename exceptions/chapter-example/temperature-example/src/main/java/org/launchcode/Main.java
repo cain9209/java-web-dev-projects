@@ -17,3 +17,5 @@ public class Main {
         currentTemp.setFahrenheit(fahrenheit);
     }
 }
+
+// checking to see if the end user inputs a temperature that is less than absolute 0 then we are useing try throw new and catch to throw an exception.

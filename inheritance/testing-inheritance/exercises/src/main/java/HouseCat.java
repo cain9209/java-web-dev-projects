@@ -20,4 +20,12 @@ public class HouseCat extends Cat {
     public String purr() {
         return "I'm a HouseCat";
     }
+
+    @Override
+    public String toString() {
+        return "HouseCat{" +
+                "species='" + species + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

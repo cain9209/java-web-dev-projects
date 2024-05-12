@@ -1,20 +1,17 @@
 package org.launchcode;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class Car {
 
-        String make = "Ford";
-        String model = "Mustang";
-        int year = 2024;
-        String color = "Red";
-        double price = 50000.00;
+       public static void main(String[]args){
 
-        void drive() {
-            System.out.println("You drive the car");
-        }
-        void brake() {
-            System.out.println("You stepped on the breaks");
-        }
+           Arraylist<HashMap<String,String>> carData = new ArrayList<>();
 
 
-    }
+
+           }
+       }
+
 
